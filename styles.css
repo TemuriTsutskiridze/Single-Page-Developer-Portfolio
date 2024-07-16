@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgba(21, 21, 21, 1);
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url("./assets/images/pattern-rings.svg");
+  background-repeat: no-repeat;
+  background-position: top 128.7rem right -33rem;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.starter {
+  padding-top: 2rem;
+  background-image: url("./assets/images/image-profile-mobile.webp"),
+    url("./assets/images/pattern-rings.svg"),
+    url("./assets/images/pattern-circle.svg");
+  background-position: left 50% top 0, top 12.4rem left -35rem,
+    top 25.4rem right -6.5rem;
+  background-size: 17.4rem 38.3rem, auto, auto;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.header {
+  gap: 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  letter-spacing: -0.333px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+}
+
+.hero-section {
+  margin-top: 33.1rem;
+  gap: 2.4rem;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -1.136px;
+  max-width: 15ch;
+}
+
+br {
+  display: none;
+}
+
+.title span {
+  border-bottom: 4px solid #4ee1a0;
+}
+
+.description {
+  color: #d9d9d9;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  max-width: 50ch;
+}
+
+.button-with-border {
+  border-bottom: 2px solid #4ee1a0;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  letter-spacing: 2.286px;
+}
+
+.technologies {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 4rem 0;
+  margin: 8rem 0;
+  width: 100%;
+  max-width: 50rem;
+  gap: 2.4rem;
+}
+
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  align-items: center;
+  font-weight: 500;
+}
+
+.tech-title {
+  color: #d9d9d9;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.experience {
+  color: #d9d9d9;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  color: white;
+  width: 100%;
+  padding: 0 1.5rem;
+  max-width: 53rem;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -1.136px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects img {
+  width: 100%;
+}
+
+.projects h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 2rem;
+}
+
+.project-tech {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.project-tech span {
+  color: #d9d9d9;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.view {
+  display: flex;
+  gap: 3.2rem;
+}
+
+footer {
+  margin-top: 8rem;
+  background-color: rgba(36, 36, 36, 1);
+  padding: 6rem 1.6rem;
+  gap: 3.9rem;
+  width: 100%;
+}
+
+footer h2 {
+  color: white;
+}
+
+.footer-starter {
+  text-align: center;
+  max-width: 55rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 8.7rem;
+}
+
+.footer-starter p {
+  margin-top: 2rem;
+}
+
+form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  font-family: inherit;
+  padding-left: 2.4rem;
+  color: white;
+}
+
+form input {
+  height: 4.3rem;
+}
+
+form textarea {
+  height: 10.7rem;
+  padding-right: 2.4rem;
+  resize: none;
+}
+
+.send {
+  color: white;
+  align-self: flex-end;
+}
+
+.socials {
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  .starter {
+    padding: 2.9rem 3.2rem;
+    background-image: url("./assets/images/pattern-circle.svg"),
+      url("./assets/images/image-profile-tablet.webp"),
+      url("./assets/images/pattern-rings.svg");
+    background-size: auto, 32.2rem 60rem, auto;
+    background-position: top 45.1rem right -5.5rem, top 0 right 0,
+      top 12.4rem left -35rem;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-section {
+    margin-top: 9rem;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0;
+  }
+
+  .hero-section .description {
+    margin-top: 6rem;
+  }
+
+  .hero-section .button-with-border {
+    margin-top: 3.4rem;
+  }
+
+  .title {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    letter-spacing: -2.045px;
+    width: 12ch;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  br {
+    display: block;
+  }
+
+  .technologies {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    max-width: 70rem;
+  }
+
+  .tech-container {
+    width: 34.5rem;
+    align-items: flex-start;
+  }
+
+  .tech-container:nth-child(3),
+  .tech-container:nth-child(4),
+  .tech-container:nth-child(5),
+  .tech-container:nth-child(6) {
+    margin-top: 5.2rem;
+  }
+
+  .projects-section {
+    max-width: 74rem;
+  }
+
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 34.5rem;
+  }
+
+  .socials {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  /* .view {
+    display: none;
+  } */
+
+  .projects-section {
+    max-width: 113rem;
+  }
+
+  .project img {
+    width: 54rem;
+    height: 40rem;
+    cursor: pointer;
+  }
+
+  .project {
+    width: 54rem;
+  }
+
+  .project {
+    position: relative;
+  }
+
+  .view {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .project {
+    cursor: pointer;
+  }
+
+  .project:hover .view {
+    opacity: 1;
+  }
+}
